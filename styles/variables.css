@@ -1,1 +1,21 @@
+:root {
+  --color-text:#353430;
+  --bg-color-elemetn:#FF8DCB;
+  --heading-color:#FFC2E6;
+  --bg-page:#FFF1F7;
 
+  --margin-header:10px 10px 0px 10px;
+  --margin-section-top:50px;
+  --gap-section-element:20px;
+  --padding-button:0px 25px;
+
+  --text-shadow:4px 4px 0 var(--accent-color);
+
+  --font-main:"IBM Plex mono";
+  --font-size-main:18px;
+  --bold-style:bold;
+  --font-size-modile:clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --font-size-desktop:clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+
+  --size-decorative:25px;
+}
