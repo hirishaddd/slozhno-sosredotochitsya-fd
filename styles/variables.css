@@ -3,11 +3,14 @@
   --bg-color-elemetn:#FF8DCB;
   --heading-color:#FFC2E6;
   --bg-page:#FFF1F7;
+  --color-button-text:#353430;
+  --color-border:rgba(53, 52, 48 ,  0.4);
+  --bg-image-header:url("/images/cover-image-light.png");
 
   --margin-header:10px 10px 0px 10px;
   --margin-section-top:50px;
   --gap-section-element:20px;
-  --padding-button:0px 25px;
+  --padding-button:1.5px 13px;
 
   --text-shadow:4px 4px 0 var(--accent-color);
 

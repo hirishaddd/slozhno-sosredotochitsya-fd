@@ -1,2 +1,32 @@
 /*Кнопки заголовок описание */
+.header__heading {
+    font-size: var(--font-size-modile);
+    color: var(--heading-color);
+}
 
+.header__theme-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    list-style: none;
+    font-family: var(--font-main);
+}
+
+.header__theme-menu-button {
+    background-color: transparent;
+    color:var(--color-button-text);
+    padding: var(--padding-button);
+    border:var(--color-button-text) solid 1px;
+    min-inline-size: 70px;
+    font-family: inherit;
+    text-transform: lowercase;
+    font-size: var(--font-size-main);
+}
+
+
+@media (width >= 375px) {
+    .header__heading{
+        font-size: var(--font-size-desktop);
+    }
+
+}
