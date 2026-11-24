@@ -1,22 +1,35 @@
 /*Кнопки заголовок описание */
+.header {
+    max-height: 100vh;
+    min-width: 375px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr min-content 1fr;
+}
+
+
 .header__heading {
     font-size: var(--font-size-modile);
     color: var(--heading-color);
+    font-family: var(--font-main);
+    line-height: var(--line-height-heading);
+    text-shadow:4px 4px 0 var(--bg-color-elemetn);
+    grid-row: 1/2;
 }
 
 .header__theme-menu-list {
-    display: flex;
-    flex-direction: column;
-    gap:10px;
+    display: grid;
+    gap: var(--gap-button);
     list-style: none;
     font-family: var(--font-main);
+    justify-content: end;
+    grid-row:0/1 ;
 }
 
 .header__theme-menu-button {
     background-color: transparent;
     color:var(--color-button-text);
     padding: var(--padding-button);
-    border:var(--color-button-text) solid 1px;
+    border:none;
     min-inline-size: 70px;
     font-family: inherit;
     text-transform: lowercase;
@@ -24,9 +37,34 @@
 }
 
 
+.header__theme-menu-button {
+  border: 1px solid transparent;
+}
+
+.header__theme-menu-button:hover:not(:focus):not(:disabled) {
+  border-color: var(--color-border-hover);
+}
+
+.header__theme-menu-button:disabled {
+  border-color: var(--color-button-text);
+}
+
+.header__theme-menu-button:focus:not(:disabled) {
+  outline: none;
+  border-color: transparent;
+  border-bottom-color: var(--color-button-text);
+}
+
 @media (width >= 375px) {
     .header__heading{
         font-size: var(--font-size-desktop);
     }
 
+
+}
+
+@media (width <= 375px) {
+    .header {
+        max-width: 668px;
+    }
 }

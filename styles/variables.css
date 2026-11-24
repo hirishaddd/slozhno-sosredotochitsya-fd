@@ -4,15 +4,17 @@
   --heading-color:#FFC2E6;
   --bg-page:#FFF1F7;
   --color-button-text:#353430;
-  --color-border:rgba(53, 52, 48 ,  0.4);
+  --color-border-hover:rgba(53, 52, 48 ,  0.4);
   --bg-image-header:url("/images/cover-image-light.png");
+  --line-height-heading:82.5%
 
   --margin-header:10px 10px 0px 10px;
   --margin-section-top:50px;
   --gap-section-element:20px;
   --padding-button:1.5px 13px;
+  --gap-button:10px;
 
-  --text-shadow:4px 4px 0 var(--accent-color);
+  --text-shadow:4px 4px 0 var(--bg-color-elemetn);
 
   --font-main:"IBM Plex mono";
   --font-size-main:18px;
@@ -21,4 +23,5 @@
   --font-size-desktop:clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 
   --size-decorative:25px;
+  --filter:drop-shadow(0 0 6px var(--color-button-text));
 }

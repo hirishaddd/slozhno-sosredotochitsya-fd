@@ -1,0 +1,25 @@
+.rec {
+    display: none;
+}
+
+html.theme-dark span.rec{
+    position: absolute;
+    inset:0px 0px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: var(--font-main);
+    font-size: var(--font-size-main);
+    color: var(--color-button-text);
+    text-transform: uppercase;
+}
+
+html.theme-dark span.rec::after {
+    content: '';
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: var(--color-button-text);
+    filter: var(--filter) var(--filter);
+    margin-left:10px ;
+}

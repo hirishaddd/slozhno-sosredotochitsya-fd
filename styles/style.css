@@ -4,5 +4,11 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: var(--bg-page);
+    display: grid;
+    grid-template-columns: 1fr;
+    min-inline-size: 375px;
 }
+
+
 
