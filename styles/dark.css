@@ -23,5 +23,29 @@
   }
 }
 
+@media (prefers-color-scheme: dark) {
+    html:not(.theme-light) span.rec {
+        position: absolute;
+        top: 10px;
+        right: 38px;
+        display: flex;
+        align-items: center;
+        font-family: var(--font-main);
+        font-size: var(--font-size-main);
+        color: var(--color-button-text);
+        text-transform: uppercase;
+    }
+
+    html:not(.theme-light) span.rec::after {
+        content: '';
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background-color: var(--color-button-text);
+        filter: var(--filter) var(--filter);
+        margin-left: 10px;
+    }
+}
+
 
 

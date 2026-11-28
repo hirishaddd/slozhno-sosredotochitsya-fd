@@ -6,8 +6,10 @@
     background-size: cover;
     background-color: var(--bg-page);
     display: grid;
+    justify-self: center;
     grid-template-columns: 1fr;
     min-inline-size: 375px;
+    max-inline-size: 1024px;
 }
 
 
